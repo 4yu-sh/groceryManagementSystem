@@ -58,9 +58,11 @@ public class Billing {
             if(totalPrice < 0){
                 if(totalPrice == -2){
                     System.out.println("Quantity Exceeds available Stock");
+                    continue;
                 }
                 if(totalPrice == -1){
                     System.out.println("No Product with id " + id + " Found!");
+                    continue;
                 }
             }
             //calculates overall price
